@@ -40,7 +40,8 @@ int main(int argc, char *argv[])
     }
     std::ifstream fin(argv[1]);
     std::ofstream fout(std::string(argv[1]).append(".replace").c_str());
-    if (!fin.is_open() || !fout.is_open())
+    
+	if (!fin.is_open() || !fout.is_open())
     {
         std::cout << "파일을 열수 없습니다.\n";
         return (1);
