@@ -3,7 +3,7 @@ CXX=c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 CXXFLAGS += -I ./include
 
-SRCS=main.cpp
+SRCS=main.cpp Sed.cpp
 OBJECTS=$(patsubst %.cpp, %.o, $(SRCS))
 NAME=replace
 
